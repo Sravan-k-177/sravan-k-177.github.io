@@ -75,6 +75,7 @@ body {
   opacity: 0;
 }
 
+/* ── LOADER ── */
 
 #loader {
   position: fixed;
@@ -136,6 +137,7 @@ body {
   text-transform: uppercase;
 }
 
+/* ── CLICK FX ── */
 
 .bhole {
   position: fixed;
@@ -179,6 +181,7 @@ body {
   to   { transform: translate(var(--x), var(--y)) rotate(540deg) scale(0.1); opacity: 0; }
 }
 
+/* ── NAV ── */
 
 nav {
   position: fixed;
@@ -279,7 +282,7 @@ nav.s {
   color: var(--gold);
 }
 
-/* HERO */
+/* ── HERO ── */
 
 #hero {
   min-height: 100vh;
@@ -1247,8 +1250,8 @@ section {
   min-height: 82vh;
   padding: 0;
 }
-#rain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.12}
 
+#rain { position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0.12; }
 
 .c-left {
   flex: 1;
@@ -1431,6 +1434,7 @@ footer {
   color: var(--gold);
 }
 
+/* ── SIDE DOTS ── */
 
 .side {
   position: fixed;
@@ -1456,6 +1460,7 @@ footer {
   transform: scale(1.8);
 }
 
+/* ── REVEAL ── */
 
 .r {
   opacity: 0;
@@ -1469,6 +1474,7 @@ footer {
 .r.d4 { transition-delay: 0.4s; }
 .r.v  { opacity: 1; transform: none; }
 
+/* ── FILM GRAIN ── */
 
 body::after {
   content: '';
@@ -1481,6 +1487,7 @@ body::after {
   mix-blend-mode: overlay;
 }
 
+/* ── RESPONSIVE ── */
 
 @media (max-width: 900px) {
   nav, footer { padding-left: 20px; padding-right: 20px; }
@@ -1602,7 +1609,7 @@ body::after {
       <div class="sec-label r">Dossier: 001</div>
       <h2 class="sec-title r d1">Who is<br><em>Sravan Kota</em></h2>
       <p class="r d1">B.Tech student in <strong>Artificial Intelligence & Data Science</strong> at Amrita Vishwa Vidyapeetham, Amritapuri. CGPA 8.38. Foundation in machine learning, deep learning, and full stack development.</p>
-      <p class="r d2">Currently part of <strong>ACM Club</strong> and was previously a member of <strong>amFOSS</strong>,conducted workshops on full stack web dev, app development, and open source. Runner Up at HackToLearn Hackathon.</p>
+      <p class="r d2">Currently part of <strong>ACM Club</strong> and was previously a member of <strong>amFOSS</strong>, conducted workshops on full stack web dev, app development, and open source. Runner Up at HackToLearn Hackathon.</p>
       <div class="quote-box r d3">
         <p>"Yeah, I'm thinking I'm back."</p>
         <cite>— The Philosophy</cite>
@@ -1717,13 +1724,11 @@ body::after {
       <div class="proj-card r d1" data-cat="ml"><div class="pc-num">// Contract 002</div><h3 class="pc-title">Stock Market Predictor</h3><p class="pc-desc">Dual-stream LSTM + FinBERT via cross-attention, built in NumPy. Monte Carlo Dropout, Sharpe ratio backtest.</p><div class="tags"><span class="tag2">LSTM</span><span class="tag2">FinBERT</span><span class="tag2">NumPy</span><span class="tag2">NLP</span></div><div class="plinks"><a href="https://github.com/Sravan-k-177/DeepLearning/blob/main/FinBertTho.py" target="_blank" class="plink">View</a></div></div>
       <div class="proj-card r d2" data-cat="ml"><div class="pc-num">// Contract 003</div><h3 class="pc-title">Glaucoma Detection CNN</h3><p class="pc-desc">Binary classification with BatchNorm, progressive dropout, GAP + GradCAM. 84% accuracy on EyePACS AIROGS.</p><div class="tags"><span class="tag2">CNN</span><span class="tag2">TensorFlow</span><span class="tag2">GradCAM</span></div><div class="plinks"><a href="https://github.com/Sravan-k-177/Machine-And-DeepLearning/tree/main/CNN" target="_blank" class="plink">View</a></div></div>
       <div class="proj-card r d1" data-cat="ece"><div class="pc-num">// Contract 004</div><h3 class="pc-title">Automatic Water Tap</h3><p class="pc-desc">Efficient automatic water tap with minimal power consumption, designed using ECE principles and simulation.</p><div class="tags"><span class="tag2">ECE</span><span class="tag2">Embedded</span><span class="tag2">Low Power</span></div><div class="plinks"></div></div>
-      <div class="proj-card r d2" data-cat="dev"><div class="pc-num">// Contract 005</div><h3 class="pc-title">Aircraft Weight Optimizer</h3><p class="pc-desc">Used Ansys to simulate and generate weight efficient aircraft parts via Topology Optimization techniques.</p><div class="tags"><span class="tag2">Ansys</span><span class="tag2">Simulation</span><span class="tag2">Topology Opt.</span></div><div class="plinks"><a href="#" class="plink"></a></div></div>
+      <div class="proj-card r d2" data-cat="dev"><div class="pc-num">// Contract 005</div><h3 class="pc-title">Aircraft Weight Optimizer</h3><p class="pc-desc">Used Ansys to simulate and generate weight efficient aircraft parts via Topology Optimization techniques.</p><div class="tags"><span class="tag2">Ansys</span><span class="tag2">Simulation</span><span class="tag2">Topology Opt.</span></div><div class="plinks"></div></div>
       <div class="proj-card r d1" data-cat="dev"><div class="pc-num">// Contract 006</div><h3 class="pc-title">Rant n' Review</h3><p class="pc-desc">A website where users can Rant and Review movies and TV series. Community-driven review platform.</p><div class="tags"><span class="tag2">Web Dev</span><span class="tag2">Full Stack</span></div><div class="plinks"><a href="https://github.com/Sravan-k-177/amfoss/tree/main/letterboxdtask" target="_blank" class="plink">View</a></div></div>
       <div class="proj-card r d2" data-cat="dev"><div class="pc-num">// Contract 007</div><h3 class="pc-title">Wheel-A-Way</h3><p class="pc-desc">A map system to help wheelchair users to commute with confidence.</p><div class="tags"><span class="tag2">Web Dev</span><span class="tag2">Full Stack</span></div><div class="plinks"><a href="https://github.com/ParvathyPadmakumar/WheelchairAccessibilityMap" target="_blank" class="plink">View</a></div></div>
     </div>
   </div>
-
-
 </section>
 <div class="divider"></div>
 
@@ -1924,7 +1929,7 @@ document.getElementById('cf').addEventListener('submit', e => {
     from_email: document.getElementById('f-email').value,
     message: document.getElementById('f-msg').value
   }).then(() => {
-    btn.textContent = 'Transmitted '
+    btn.textContent = 'Transmitted ✓'
     status.textContent = '// Message delivered.'
     status.style.color = 'var(--gold)'
     setTimeout(() => { btn.textContent = 'Transmit →'; status.textContent = '// No spam. Ever.'; status.style.color = ''; e.target.reset() }, 3000)
